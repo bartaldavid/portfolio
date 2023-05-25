@@ -1,8 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Card from "../components/Card.astro";
+import CardList from "../components/CardList.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-
+<Layout title="Portfolio">
+  <main class="flex flex-col items-center">
+    <div class="mx-auto pt-14 text-center">
+      <h1 class="text-4xl font-extrabold">Portfolio</h1>
+      <p class="text-slate-500">my dev stuff</p>
+    </div>
+    <CardList />
+  </main>
 </Layout>
-
