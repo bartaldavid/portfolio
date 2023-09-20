@@ -1,0 +1,26 @@
+---
+import Card from "./Card.astro";
+
+const postList = [
+  {
+    title: "Próba 1",
+    description: "lorem ipsum",
+  },
+  {
+    title: "Próba 2",
+    description: "lorem ipsum",
+  },
+];
+---
+
+<div class="flex flex-col gap-2 mt-10">
+  {
+    postList.map((post) => (
+      <Card
+        title={post.title}
+        description={post.description}
+        githubLink={"http://github.com"}
+      />
+    ))
+  }
+</div>

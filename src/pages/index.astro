@@ -1,14 +1,15 @@
 ---
 import Card from "../components/Card.astro";
 import CardList from "../components/CardList.astro";
+import Menu from "../components/Menu.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Portfolio">
-  <main class="flex flex-col items-center">
+  <main class="flex flex-col items-center dark:bg-slate-800">
     <div class="mx-auto pt-14 text-center">
-      <h1 class="text-4xl font-extrabold">Portfolio</h1>
-      <p class="text-slate-500">my dev stuff</p>
+      <h1 class="text-4xl font-extrabold dark:text-slate-50">David Bartal</h1>
+      <Menu />
     </div>
     <CardList />
   </main>
